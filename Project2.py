@@ -184,11 +184,11 @@ def plot(X, Y, name):
 X, Y = word_embeddings('trainreviews.txt')
 
 X = sk.preprocessing.normalize(X)
-plot(X,Y, "word_embedding_")
+#plot(X,Y, "word_embedding_")
 vec = vectorizer()
 X_b, Y_b = bag_of_words(vec, test = False)
 X_b = sk.preprocessing.normalize(X_b)
-plot(X_b, Y_b, "bag_o_word_")
+#plot(X_b, Y_b, "bag_o_word_")
 print "Word embeddings"
 best_we = model_select(X,Y)
 print best_we
